@@ -1,12 +1,11 @@
 from . import __version__ as app_version
 
 app_name = "sundae_theme"
-app_title = "Sundae Theme"
-app_publisher = "tahir zaqout"
+app_title = "APP Theme"
+app_publisher = "Ahmed Emam"
 app_description = "multi themes for frappe & erpnext apps"
-app_email = "tahirzaqout8@gmail.com"
+app_email = "ahmedemamhatem@gmail.com"
 app_license = "MIT"
-app_logo_url = "/assets/sundae_theme/img/slogo.jpg"
 
 # website_context = {
 # 	"favicon": "/assets/sundae_theme/img/logo.png",
