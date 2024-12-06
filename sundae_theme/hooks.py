@@ -1,32 +1,23 @@
+from . import __version__ as app_version
+
 app_name = "sundae_theme"
 app_title = "Sundae Theme"
-app_publisher = "sundae_theme"
-app_description = "sundae_theme"
-app_email = "sundae_theme@sundae_theme"
-app_license = "mit"
+app_publisher = "tahir zaqout"
+app_description = "multi themes for frappe & erpnext apps"
+app_email = "tahirzaqout8@gmail.com"
+app_license = "MIT"
+app_logo_url = "/assets/sundae_theme/img/slogo.jpg"
 
-# Apps
-# ------------------
-
-# required_apps = []
-
-# Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "sundae_theme",
-# 		"logo": "/assets/sundae_theme/logo.png",
-# 		"title": "Sundae Theme",
-# 		"route": "/sundae_theme",
-# 		"has_permission": "sundae_theme.api.permission.has_app_permission"
-# 	}
-# ]
-
+# website_context = {
+# 	"favicon": "/assets/sundae_theme/img/logo.png",
+# 	"splash_image": "/assets/sundae_theme/img/slogo.jpg",
+# }
 # Includes in <head>
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/sundae_theme/css/sundae_theme.css"
-# app_include_js = "/assets/sundae_theme/js/sundae_theme.js"
+app_include_css = "sundae_theme.bundle.css"
+app_include_js = ["sundae_theme.bundle.js"]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/sundae_theme/css/sundae_theme.css"
@@ -48,11 +39,6 @@ app_license = "mit"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
-# Svg Icons
-# ------------------
-# include app icons in desk
-# app_include_icons = "sundae_theme/public/icons.svg"
-
 # Home Pages
 # ----------
 
@@ -61,7 +47,7 @@ app_license = "mit"
 
 # website user home page (by Role)
 # role_home_page = {
-# 	"Role": "home_page"
+#	"Role": "home_page"
 # }
 
 # Generators
@@ -75,8 +61,8 @@ app_license = "mit"
 
 # add methods and filters to jinja environment
 # jinja = {
-# 	"methods": "sundae_theme.utils.jinja_methods",
-# 	"filters": "sundae_theme.utils.jinja_filters"
+#	"methods": "sundae_theme.utils.jinja_methods",
+#	"filters": "sundae_theme.utils.jinja_filters"
 # }
 
 # Installation
@@ -118,11 +104,11 @@ app_license = "mit"
 # Permissions evaluated in scripted ways
 
 # permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+#	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
 #
 # has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
+#	"Event": "frappe.desk.doctype.event.event.has_permission",
 # }
 
 # DocType Class
@@ -130,7 +116,7 @@ app_license = "mit"
 # Override standard doctype classes
 
 # override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
+#	"ToDo": "custom_app.overrides.CustomToDo"
 # }
 
 # Document Events
@@ -138,32 +124,32 @@ app_license = "mit"
 # Hook on document methods and events
 
 # doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
+#	"*": {
+#		"on_update": "method",
+#		"on_cancel": "method",
+#		"on_trash": "method"
+#	}
 # }
 
 # Scheduled Tasks
 # ---------------
 
 # scheduler_events = {
-# 	"all": [
-# 		"sundae_theme.tasks.all"
-# 	],
-# 	"daily": [
-# 		"sundae_theme.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"sundae_theme.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"sundae_theme.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"sundae_theme.tasks.monthly"
-# 	],
+#	"all": [
+#		"sundae_theme.tasks.all"
+#	],
+#	"daily": [
+#		"sundae_theme.tasks.daily"
+#	],
+#	"hourly": [
+#		"sundae_theme.tasks.hourly"
+#	],
+#	"weekly": [
+#		"sundae_theme.tasks.weekly"
+#	],
+#	"monthly": [
+#		"sundae_theme.tasks.monthly"
+#	],
 # }
 
 # Testing
@@ -174,15 +160,15 @@ app_license = "mit"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "sundae_theme.event.get_events"
-# }
+override_whitelisted_methods = {
+	"frappe.core.doctype.user.user.switch_theme": "sundae_theme.override.switch_theme"
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "sundae_theme.task.get_dashboard_data"
+#	"Task": "sundae_theme.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -208,37 +194,29 @@ app_license = "mit"
 # --------------------
 
 # user_data_fields = [
-# 	{
-# 		"doctype": "{doctype_1}",
-# 		"filter_by": "{filter_by}",
-# 		"redact_fields": ["{field_1}", "{field_2}"],
-# 		"partial": 1,
-# 	},
-# 	{
-# 		"doctype": "{doctype_2}",
-# 		"filter_by": "{filter_by}",
-# 		"partial": 1,
-# 	},
-# 	{
-# 		"doctype": "{doctype_3}",
-# 		"strict": False,
-# 	},
-# 	{
-# 		"doctype": "{doctype_4}"
-# 	}
+#	{
+#		"doctype": "{doctype_1}",
+#		"filter_by": "{filter_by}",
+#		"redact_fields": ["{field_1}", "{field_2}"],
+#		"partial": 1,
+#	},
+#	{
+#		"doctype": "{doctype_2}",
+#		"filter_by": "{filter_by}",
+#		"partial": 1,
+#	},
+#	{
+#		"doctype": "{doctype_3}",
+#		"strict": False,
+#	},
+#	{
+#		"doctype": "{doctype_4}"
+#	}
 # ]
 
 # Authentication and authorization
 # --------------------------------
 
 # auth_hooks = [
-# 	"sundae_theme.auth.validate"
+#	"sundae_theme.auth.validate"
 # ]
-
-# Automatically update python controller files with type annotations for this app.
-# export_python_type_annotations = True
-
-# default_log_clearing_doctypes = {
-# 	"Logging DocType Name": 30  # days to retain logs
-# }
-
