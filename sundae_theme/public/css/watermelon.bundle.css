@@ -136,7 +136,7 @@
 /*Main Section */
 [data-theme=watermelon] .list-row-head {
     background-color: #f3f6f9;
-    border-bottom: 1px solid #e4e4e4 !important;
+    border-bottom: 1px solid #7c4343 !important;
 }
 
 /* Buttons */
@@ -194,7 +194,8 @@
 }
 [data-theme=watermelon] .input-with-feedback,
 [data-theme=watermelon] .like-disabled-input{
-    background-color: #e8eafcad;
+    background-color: #eeeef5c3;
+    color: #000000;
 }
 [data-theme=watermelon] .document-link-badge span{
     background-color: var(--main-color) !important;

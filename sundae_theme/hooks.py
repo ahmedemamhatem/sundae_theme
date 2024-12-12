@@ -14,7 +14,14 @@ app_logo_url = "/assets/sundae_theme/img/slogo.jpg"
 # }
 # Includes in <head>
 # ------------------
-
+fixtures = [
+    {
+        "dt": "Property Setter",
+        "filters": [
+            ["name", "in", ["User-desk_theme-options"]]
+        ]
+    }
+]
 # include js, css files in header of desk.html
 app_include_css = "sundae_theme.bundle.css"
 app_include_js = ["sundae_theme.bundle.js"]

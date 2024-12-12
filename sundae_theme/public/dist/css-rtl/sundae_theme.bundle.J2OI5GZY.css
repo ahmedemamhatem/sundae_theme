@@ -1,4 +1,4 @@
-/* ../../../../../tmp/tmp-22798-kA8DZ2reAoZ7/1939c0c7e004/cotton_candy.bundle.css */
+/* ../../../../../tmp/tmp-3176-IapVPGzbKxO0/193bb89844f169/cotton_candy.bundle.css */
 [data-theme=cotton_candy] {
   --gray-50: #E8F5FE;
   --gray-100: #D0E7FA;
@@ -162,7 +162,7 @@
   --indicator-dot-cyan: var(--bg-cyan);
 }
 
-/* ../../../../../tmp/tmp-22798-kA8DZ2reAoZ7/1939c0c7e8db/cherry.bundle.css */
+/* ../../../../../tmp/tmp-3176-IapVPGzbKxO0/193bb8984bc170/cherry.bundle.css */
 [data-theme=cherry] {
   --pink-50: #fff1f2;
   --pink-100: #ffe4e6;
@@ -341,7 +341,7 @@
   color: var(--pink-800);
 }
 
-/* ../../../../../tmp/tmp-22798-kA8DZ2reAoZ7/1939c0c7f6c15/apricot.bundle.css */
+/* ../../../../../tmp/tmp-3176-IapVPGzbKxO0/193bb8984db173/apricot.bundle.css */
 [data-theme=apricot] *::-webkit-scrollbar {
   width: 6px;
 }
@@ -564,7 +564,7 @@
   background-color: #f4f4f4;
 }
 
-/* ../../../../../tmp/tmp-22798-kA8DZ2reAoZ7/1939c0c7fc619/watermelon.bundle.css */
+/* ../../../../../tmp/tmp-3176-IapVPGzbKxO0/193bb898508178/watermelon.bundle.css */
 :root {
   --main-color: #691551;
   --second-color: #af3d8f;
@@ -689,7 +689,7 @@ h6.uppercase {
 }
 [data-theme=watermelon] .list-row-head {
   background-color: #f3f6f9;
-  border-bottom: 1px solid #e4e4e4 !important;
+  border-bottom: 1px solid #7c4343 !important;
 }
 [data-theme=watermelon] .btn-primary {
   background-color: var(--main-color);
@@ -750,7 +750,8 @@ h6.uppercase {
 }
 [data-theme=watermelon] .input-with-feedback,
 [data-theme=watermelon] .like-disabled-input {
-  background-color: #e8eafcad;
+  background-color: #eeeef5c3;
+  color: #000000;
 }
 [data-theme=watermelon] .document-link-badge span {
   background-color: var(--main-color) !important;
@@ -786,9 +787,9 @@ h6.uppercase {
   background: var(--widget-bg);
 }
 
-/* ../../../../../tmp/tmp-22798-kA8DZ2reAoZ7/sundae_theme/sundae_theme/public/css/sundae_theme.bundle.css */
+/* ../../../../../tmp/tmp-3176-IapVPGzbKxO0/sundae_theme/sundae_theme/public/css/sundae_theme.bundle.css */
 .app-logo {
   min-height: 55px !important;
   width: auto !important;
 }
-/*# sourceMappingURL=sundae_theme.bundle.ZOKR6EOL.css.map */
+/*# sourceMappingURL=sundae_theme.bundle.J2OI5GZY.css.map */

@@ -1,4 +1,4 @@
-/* ../../../../../tmp/tmp-22798-5o1e5hKFasqH/sundae_theme/sundae_theme/public/css/watermelon.bundle.css */
+/* ../../../../../tmp/tmp-3176-F5Rzqt6OFk74/sundae_theme/sundae_theme/public/css/watermelon.bundle.css */
 :root {
   --main-color: #691551;
   --second-color: #af3d8f;
@@ -38,7 +38,7 @@ h6.uppercase {
   font-size: 11.5px;
 }
 [data-theme=watermelon] .standard-sidebar-item.selected {
-  background: linear-gradient(to left, var(--main-color), var(--second-color));
+  background: linear-gradient(to right, var(--main-color), var(--second-color));
 }
 [data-theme=watermelon] .standard-sidebar-item.selected a {
   color: #fff;
@@ -55,7 +55,7 @@ h6.uppercase {
   fill: #fff;
 }
 [data-theme=watermelon] .navbar {
-  background: linear-gradient(to left, var(--main-color), var(--second-color)) !important;
+  background: linear-gradient(to right, var(--main-color), var(--second-color)) !important;
   border: none !important;
 }
 [data-theme=watermelon] .navbar-nav > li > a {
@@ -102,7 +102,7 @@ h6.uppercase {
   background-color: transparent;
 }
 [data-theme=watermelon] .awesomplete > ul > li:hover {
-  background: linear-gradient(to left, var(--main-color), var(--second-color));
+  background: linear-gradient(to right, var(--main-color), var(--second-color));
 }
 [data-theme=watermelon] .awesomplete > ul > li:hover a {
   color: #fff;
@@ -123,7 +123,7 @@ h6.uppercase {
 }
 [data-theme=watermelon] .list-row-head {
   background-color: #f3f6f9;
-  border-bottom: 1px solid #e4e4e4 !important;
+  border-bottom: 1px solid #7c4343 !important;
 }
 [data-theme=watermelon] .btn-primary {
   background-color: var(--main-color);
@@ -184,7 +184,8 @@ h6.uppercase {
 }
 [data-theme=watermelon] .input-with-feedback,
 [data-theme=watermelon] .like-disabled-input {
-  background-color: #e8eafcad;
+  background-color: #eeeef5c3;
+  color: #000000;
 }
 [data-theme=watermelon] .document-link-badge span {
   background-color: var(--main-color) !important;
@@ -219,4 +220,4 @@ h6.uppercase {
 [data-theme=watermelon] #page-Workspaces .page-head {
   background: var(--widget-bg);
 }
-/*# sourceMappingURL=watermelon.bundle.A6I432IH.css.map */
+/*# sourceMappingURL=watermelon.bundle.IUGUBGEC.css.map */
